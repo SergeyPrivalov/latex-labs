@@ -18,5 +18,8 @@ all: main.pdf
 %.pdf: %.ps
 	ps2pdf $^
 
+%.zip: clean
+	zip -S -r $@ .
+
 clean:
 	git clean -xf
