@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-all: main.pdf
+all: main.pdf sukhoplyuev.zip
 
 # latext -> pdf
 # %.pdf: %.tex
@@ -18,7 +18,7 @@ all: main.pdf
 %.pdf: %.ps
 	ps2pdf $^
 
-%.zip: clean
+%.zip: clean $(wildcard ./*)
 	zip -S -r $@ .
 
 clean:
