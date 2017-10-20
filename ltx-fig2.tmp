@@ -1,0 +1,13 @@
+verbatimtex
+%&latex
+\documentclass{article}
+\usepackage{mathpazo}
+\begin{document}
+etex
+picture latexmp_picture[];
+latexmp_picture[1]:= btex $-$ etex ;
+latexmp_picture[2]:= btex $1$ etex ;
+latexmp_picture[3]:= btex ${\times}10$ etex ;
+latexmp_picture[4]:= btex ${}^-$ etex ;
+latexmp_picture[5]:= btex ${}^2$ etex ;
+latexmp_picture[6]:= btex $10$ etex ;

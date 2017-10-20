@@ -1,10 +1,15 @@
-.PHONY: all clean
+.PHONY: all clean mp main
 
 all: main.pdf sukhoplyuev.zip
+
+main: main.pdf $(patsubst %.mp,%.mps,$(wildcard fig*.mp))
+
+main.pdf: main.tex lab_3.tex title_page.tex
 
 # latext -> pdf
 %.pdf: %.tex
 	pdflatex $^
+	bibtex main
 
 # # latex -> dvi
 # %.dvi: %.tex
@@ -19,7 +24,14 @@ all: main.pdf sukhoplyuev.zip
 # 	ps2pdf $^
 
 %.zip: clean $(wildcard ./*)
-	zip -S -r $@ .
+	zip -r $@ .
 
 clean:
 	git clean -xf
+
+A := $(patsubst %.mp,%.pdf,$(wildcard *.mp))
+mp: $(A)
+
+%.mps: %.mp
+	mpost $^ 
+	mptopdf $^

@@ -16,15 +16,19 @@
 \pagestyle{plain}
 \setlength{\parindent}{1cm}
 
+\usepackage{verbatim}
 \usepackage{longtable}
 \usepackage{graphicx} 
 
 \usepackage{float}
 \floatstyle{ruled}
-\newfloat{program}{thp}{lop}
-\floatname{program}{Листинг}
+\newfloat{program}{!h}{lop}
+\floatname{program}{MetaPost-скрипт}
+
+\newfloat{log}{!h}{lop}
+\floatname{log}{MetaPost-лог}
 
 \begin{document}
 \include{title_page}
-\include{lab_2}
+\include{lab_3}
 \end{document}

@@ -1,0 +1,14 @@
+This is MetaPost, version 1.999 (TeX Live 2015/Debian) (kpathsea version 6.2.1)  21 OCT 2017 09:51
+**fig2.mp
+(/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texlive/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./fig2.mp
+(/usr/share/texlive/texmf-dist/metapost/latexmp/latexmp.mp)
+(/usr/share/texlive/texmf-dist/metapost/base/graph.mp
+(/usr/share/texlive/texmf-dist/metapost/base/marith.mp
+(/usr/share/texlive/texmf-dist/metapost/base/string.mp))
+(/usr/share/texlive/texmf-dist/metapost/base/format.mp
+(/usr/share/texlive/texmf-dist/metapost/base/string.mp)
+(/usr/share/texlive/texmf-dist/metapost/base/texnum.mp))) [1] )
+1 output file written: fig2.mps
+
