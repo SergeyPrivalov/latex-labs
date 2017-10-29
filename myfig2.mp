@@ -1,19 +1,24 @@
-verbatimtex%&latex
+verbatimtex
+%&latex
 \documentclass{article}
 \begin{document}
 etex
+
 input courbes;
+
 % ======================================== fonctions
 vardef fx(expr t) = t enddef;
 vardef fy(expr t) = t+a enddef;
+
 % ======================================== figure
+
 beginfig(1);
 repere(10cm,10cm,5cm,5cm,2cm,2cm);
 trace.axes(0.5pt);
 marque.unites(1mm);
 %% Champs de directions
 vardef F(expr x,y) = 1 enddef;
-champ.segments(0,0,0.2,0.1,0.5white);
+champ.vecteurs(0.0,0.0,0.2,0.1,0.5white);
 %% Courbes intgrales
 for n = 0 upto 16:
 	a := (n/2) - 4;
