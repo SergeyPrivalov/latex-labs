@@ -1,5 +1,5 @@
 verbatimtex
-% TODO: Прокомментировать
+% TODO: Сделать свой пример ДУ
 %&latex
 \documentclass{article}
 \begin{document}

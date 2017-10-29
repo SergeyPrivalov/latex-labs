@@ -1,5 +1,5 @@
 beginfig(1);
-% TODO: Прокомментировать
+% TODO: Переписать на свое ДУ
 % some constants
 numeric xmin, xmax, ymin, ymax, xinc, u;
 xmin := -1.5;
