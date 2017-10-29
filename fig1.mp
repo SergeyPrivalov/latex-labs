@@ -1,37 +1,34 @@
 beginfig(1);
 % TODO: Прокомментировать
-% some constants
+% указываем константные значения
 numeric xmin, xmax, ymin, ymax, xinc, u;
 xmin := -1.5;
 xmax := 1.5;
 ymin := 0;
 ymax := 4.5;
 xinc := 0.05;
-
 u := 1cm;
-
-% draw axes
+% рисуем оси
 draw (xmin-0.5,0)*u--(xmax+0.5,0)*u;
 draw (0,ymin-0.5)*u--(0,ymax+0.5)*u;
 
-% define f making up the ODE y' = f(x,y). Here we take y' = y
-% with the exponential curve as solution curve
+% определяем f исходя из y' = f(x,y). В данном случае y' = y
 vardef f(expr x,y) = y enddef;
 
-% define routine to compute function values
+% вычисление значений функции
 def compute_curve(suffix g)(expr xmin, xmax, xinc) =
 ( (xmin, g(xmin))
 for x=xmin+xinc step xinc until xmax: .. (x,g(x)) endfor )
 enddef;
 
-% compute and draw exponential curve
+% вычисление значений эспоненты
 vardef exp(expr x) = (mexp 256)**x enddef;
 
 path p;
 p := compute_curve(exp, xmin, xmax, xinc) scaled u;
 draw p;
 
-% draw direction field
+% рисуем поле веторов синим цветом
 pair vec; path v;
 for x=xmin step 0.5 until xmax:
     for y=ymin+0.5 step 0.5 until ymax-0.5:
@@ -41,14 +38,14 @@ for x=xmin step 0.5 until xmax:
     endfor;
 endfor;
 
-% draw directions along the exponential curve
+% рисуем вектора вдоль эспоненты красным
 for x=-0.5 step 0.5 until xmax:
     vec := unitvector( (1,f(x,exp(x))) ) scaled 1/2u;
     v := ((0,0)--vec) shifted -1/2vec;
     drawarrow v shifted (x*u,exp(x)*u) withcolor red;
 endfor;
 
-% draw ticks and labels
+% рисуем и подписываем
 for x=round(xmin) upto xmax:
     draw (x,-0.05)*u--(x,0.05)*u;
 endfor;
