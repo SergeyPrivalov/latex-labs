@@ -1,0 +1,31 @@
+\documentclass{article}% Manuel Luque
+\usepackage{pst-solides3d}
+\begin{document}
+\begin{pspicture}(-5,-5)(5,5)
+\psset{viewpoint=50 70 30 rtp2xyz,Decran=50,lightsrc=viewpoint}
+\defFunction[algebraic]{SURFACE}(x,y){x}{y}{15*(x^3-x*y^4-x/5)*Euler^(-x^2-y^2)+2*Euler^(-((x-1.225)^2+y^2))}
+\psSolid[object=surfaceparametree,
+fillcolor=green!20,incolor=gray!20,
+linewidth=0.01,
+base=-4 4 -4 1.5,
+function=SURFACE,
+intersectionplan={[0 1 0 -1.5]},
+intersectioncolor=(rouge),
+intersectionlinewidth=2,
+intersectiontype=0,
+ngrid=50]%
+\psSolid[object=plan,definition=normalpoint,opacity=0.5,
+fillcolor=cyan!20,
+base=-4 4 -8 8,args={0 1.5 0 [0 1 0 0]}]
+\psSolid[object=surfaceparametree,
+fillcolor=green!20,incolor=gray!20,
+linewidth=0.01,
+base=-4 4 1.5 4,
+function=SURFACE,
+intersectionplan={[0 1 0 -5.5]},
+intersectioncolor=(rouge),
+intersectionlinewidth=2,
+intersectiontype=0,
+ngrid=50](0,4,0)
+\end{pspicture}
+\end{document}

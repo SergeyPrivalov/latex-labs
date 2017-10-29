@@ -12,4 +12,8 @@
 \BibEmph{Hobby,~John~D.} METAPOST - РУКОВОДСТВО
   ПОЛЬЗОВАТЕЛЯ~/ John~D.~Hobby.
 
+\bibitem{mpost_2}
+\selectlanguageifdefined{english}
+\BibEmph{Heck,~Andre}. Learning METAPOST by Doing~/ Andre~Heck.
+
 \end{thebibliography}

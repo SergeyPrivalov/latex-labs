@@ -1,14 +1,21 @@
-This is MetaPost, version 1.999 (TeX Live 2015/Debian) (kpathsea version 6.2.1)  21 OCT 2017 09:51
-**fig2.mp
-(/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
-(/usr/share/texlive/texmf-dist/metapost/base/plain.mp
-Preloading the plain mem file, version 1.005) ) (./fig2.mp
-(/usr/share/texlive/texmf-dist/metapost/latexmp/latexmp.mp)
-(/usr/share/texlive/texmf-dist/metapost/base/graph.mp
-(/usr/share/texlive/texmf-dist/metapost/base/marith.mp
-(/usr/share/texlive/texmf-dist/metapost/base/string.mp))
-(/usr/share/texlive/texmf-dist/metapost/base/format.mp
-(/usr/share/texlive/texmf-dist/metapost/base/string.mp)
-(/usr/share/texlive/texmf-dist/metapost/base/texnum.mp))) [1] )
-1 output file written: fig2.mps
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=mptopdf 2017.10.29)  30 OCT 2017 01:26
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\relax fig2.mps
+ (./fig2.mps{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
+[1] 
+Here is how much of TeX's memory you used:
+ 63 strings out of 496714
+ 488 string characters out of 6201184
+ 4016737 words of memory out of 9001944
+ 1715 multiletter control sequences out of 15000+600000
+ 307 words of font info for 1 font, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 10i,3n,7p,120b,257s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on fig2.pdf (1 page, 14528 bytes).
+PDF statistics:
+ 12 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 7 words of extra memory for PDF output out of 10000 (max. 10000000)
 
